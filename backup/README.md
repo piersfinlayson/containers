@@ -12,7 +12,8 @@ To run, you need three directories on your host to be mapped to the container:
 
 A script could look something like this:
 
-rsync -aAXv -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /scripts/id_rsa" user@host:/backup_this/ /backup/ >> /output/out.txt
-msmtp --host smtp.server.fqdn -f from@example.com to@example.com < /output/out.txt
+  rsync -aAXv -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /scripts/id_rsa" user@host:/backup_this/ /backup/ >> /output/out.txt
+
+  msmtp --host smtp.server.fqdn -f from@example.com to@example.com < /output/out.txt
 
 Uploaded to hub.docker.com as piersfinlayson/backup
