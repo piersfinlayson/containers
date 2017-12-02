@@ -4,7 +4,7 @@ LABEL maintainer="Piers Finlayson <piers@piersandkatie.com>"
 
 LABEL description="Smartmontools Container"
 
-RUN apk --no-cache add msmtp smartmontools
+RUN apk --no-cache add msmtp smartmontools bash
 
 RUN mkdir -p /scripts
 
